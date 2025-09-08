@@ -29,7 +29,7 @@
 <body>
   <div class="topbar">
     <a class="home" href="index.html" aria-label="홈으로">
-      <!-- reversed arrow (back) -->
+      <!-- back arrow -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 5l-8 7 8 7"/></svg>
       <span class="title">항공 종사자 복식</span>
     </a>
@@ -37,7 +37,11 @@
   <main id="stack"></main>
   <div class="spacer"></div>
   <script>
-    const images = ['assets/history/01.jpg', 'assets/history/02.jpg', 'assets/history/03.jpg']; // 여기에 파일을 추가/삭제하세요
+    const images = [
+      'assets_updated/attire/attire1.jpg',
+      'assets_updated/attire/attire2.jpg',
+      'assets_updated/attire/attire3.jpg'
+    ];
     const stack = document.getElementById('stack');
     images.forEach(src => {
       const img = document.createElement('img');
@@ -49,8 +53,5 @@
       stack.appendChild(img);
     });
   </script>
-  <img src="assets_updated/attire/attire1.jpg" class="img" alt="">
-  <img src="assets_updated/attire/attire2.jpg" class="img" alt="">
-  <img src="assets_updated/attire/attire3.jpg" class="img" alt="">
 </body>
 </html>
